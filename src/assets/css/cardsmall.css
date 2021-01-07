@@ -1,0 +1,54 @@
+
+.card-small {
+    background:var(--cardgray);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em;
+    border-radius: 8px;
+    padding: 1.7em;
+  
+  
+  }
+  
+  .card-small p {
+    margin: 0%;
+  }
+  
+  .card-small-view {
+  
+    color: var(--gray);
+    font-weight: bold;
+    font-size: .9em;
+  
+  }
+  .card-small-icon {
+  
+    text-align: right;
+  }
+  
+  .card-small-number {
+   
+   font-size: 2em;
+   font-weight: bold;
+   line-height: .9em;
+  
+  }
+  
+  .card-small-porcentage {
+     text-align: right;
+     display: flex;
+     align-items: flex-end;
+     color: var(--lime-green);
+     justify-content: flex-end;
+     font-size: .9em;
+     font-weight: bold;
+  }
+  
+  .card-small-porcentage.is-danger {
+    color: var(--brigth-red);
+  }
+  
+  .card-small-porcentage  span {
+  display: flex;
+  align-items: center;
+  }

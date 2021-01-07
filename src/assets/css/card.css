@@ -1,0 +1,76 @@
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    background:var(--cardgray);
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+  }
+  .card:before {
+  content: "";
+  height: 4px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  }
+  .card.facebook::before {
+  background: var(--facebook);
+  
+  }
+  .card.twitter::before {
+    background: var(--twitter);
+   
+   }
+   .card.instagram::before {
+    background-image: linear-gradient(to right,var(--instagram-1) 0% , var(--instagram-2) 100%);
+   
+   }
+   .card.youtube::before {
+    background: var(--youtube);
+   
+   }
+  
+  
+  .card-followers-number {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  
+  .card-followers-title {
+    display: block;
+    text-transform: uppercase;
+    color: #a9aca9;
+    letter-spacing: 5px;
+    font-size: .8em;
+    margin-top: 10px;
+  }
+  .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray);
+    font-size: .9em;
+    font-weight:bold;
+  }
+  .card-today {
+    color: var(--lime-green);
+    font-size: .7;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-title img {
+    margin-right: 5px;
+  }
+  
+  .card-today img {
+    margin-right: 5px;
+    height: 15px;
+  }

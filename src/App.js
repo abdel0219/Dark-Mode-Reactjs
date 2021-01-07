@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React  from 'react';
+import '../src/assets/css/global.css';
+import Header from './Header';
+import CardsList from './CardsList';
+import OverView from './OverView';
 
-function App() {
+
+/*
+const checkbox = document.querySelector('#checkbox')
+if (window.matchMedia('(prefers-color-scheme: dark)').matches){
+   checkbox.setAttribute('checked',true)
+}
+
+checkbox.addEventListener('change', function(e){
+  document.body.classList.toggle('is-dark-mode')
+
+   
+})*/
+function App  () {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+       <>
+        <Header>
+          <h1> hola mundo!</h1>
+        </Header>
+        <CardsList/>
+        <OverView />
+
+       </>
+     )
+ 
 }
 
 export default App;

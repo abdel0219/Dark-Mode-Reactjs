@@ -1,0 +1,115 @@
+body {
+    background:var(--baseBackground);
+    font-family: 'Inter', sans-serif;
+    color: var(--baseColor);
+  }
+
+
+:root {
+    --lime-green: hsl(163,72%,41%);
+    --brigth-red: hsl(356,69%,56%);
+    --facebook: #1683f4;
+    --twitter: hsl(203,89%,53%);
+    --instagram-1: hsl(37,97%,70%);
+    --instagram-2:hsl(329,70%,58%);
+    --youtube: hsl(348,97%,37%);
+    --gray:#5f616d;
+    --cardgray:#f0f3fa;
+    --ligthGray:#f8f9fe;
+    --cardTitle:#8080ad;
+    --baseBackground:white;
+    --baseColor:#1d2029;
+    --switchSpinner:white;
+    --switch:#5f616d;
+  }
+
+.wrapper {
+    padding: 0 30px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-row-gap: 25px;
+  }
+
+h2 {
+  color: var(--gray);
+}
+
+img {
+  width: 30px;
+}
+
+
+/* responsive movil */
+
+@media screen  and (min-width: 375px){
+  .grid {
+      grid-template-columns: 1fr;
+      grid-column-gap:25px;
+  }
+  .wrapper {
+      max-width: 1440px;
+      margin: auto;
+  }
+  .header-total {
+    border-bottom: 1px solid var(--gray);
+  }
+}
+
+/*Table*/
+@media screen and (min-width:768px ){
+ 
+.grid {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
+/*Ordenador*/
+@media screen and (min-width:1024px){
+
+.grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+}
+
+}
+
+/*Dark mode*/
+
+.is-dark-mode  {
+  --cardgray:#252b43;
+  --gray:#8088ad;
+  --ligthGray:#252b43;
+  --baseBackground:#1d2029;
+  --baseColor:white;
+  --switchSpinner:#282943;
+  --cadritle:#8088ad;
+  --switch: linear-gradient(to right, #4796d2 0%, #37ce8f 100%);
+}
+
+
+@media(prefers-color-scheme: dark) {
+
+  :root {
+      --cardgray:#252b43;
+      --gray:#8088ad;
+      --ligthGray:#252b43;
+      --baseBackground:#1d2029;
+      --baseColor:white;
+      --switchSpiner:#282943;
+      --cadritle:#8088ad;
+      --switch: linear-gradient(to right #4796d2 0%, #37ce8f 100%);
+  }
+
+  .card-title {
+      color: var(--gray);
+  }
+  .card-followers-title,.card-small-view {
+      color: #8088ad;
+  }
+  
+} 
