@@ -7,7 +7,7 @@ function CardsSmall ({PageView,number,porcentage}) {
             <article className="card-small">
             <p className="card-small-view">{PageView} </p>
             <p className="card-small-icon">
-                <img src="./images/facebook.jpeg" alt=""/>
+                <img src="facebook.jpeg" alt=""/>
             </p>
             <p className="card-small-number"> {number} </p>
 
